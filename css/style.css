@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  background: #fff8f0;
+  color: #333;
+}
+header {
+  background: #ff7043;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+nav {
+  margin-top: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+nav a:hover {
+  opacity: 0.7;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem 2rem 1rem;
+  background: linear-gradient(120deg, #fff8f0 60%, #ffe0b2 100%);
+}
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff7043;
+}
+.hero p {
+  font-size: 1.1rem;
+  max-width: 500px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.search-bar {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+.search-bar input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ff7043;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+  outline: none;
+}
+.search-bar button {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  background: #ff7043;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.search-bar button:hover {
+  background: #e64a19;
+}
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.recipe-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  transition: transform 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+.recipe-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+.recipe-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.recipe-card-content {
+  padding: 1rem;
+  flex: 1;
+}
+.recipe-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #ff7043;
+}
+.recipe-card p {
+  margin: 0;
+  font-size: 0.97rem;
+  color: #555;
+}
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #fff3e0;
+  color: #b26a3d;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+  .recipes {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+  }
+}
