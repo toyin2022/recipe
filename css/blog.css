@@ -361,3 +361,15 @@ body {
     padding: 0.7rem 0.5rem 1rem 0.5rem;
   }
 }
+/* footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .footer-container p {
+  margin: 0;
+  font-size: 0.9rem;
+}

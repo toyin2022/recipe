@@ -265,3 +265,15 @@ body {
     padding: 30px 5px;
   }
 }
+/* footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .footer-container p {
+  margin: 0;
+  font-size: 0.9rem;
+}

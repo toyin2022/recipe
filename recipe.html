@@ -19,7 +19,7 @@
       <ul class="nav" id="navMenu">
         <div class="navigation">
           <li><a href="./index.html">Home</a></li>
-          <div class="dots active">
+          <div class="dots">
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
@@ -65,6 +65,41 @@
     </header>
 
     <main>
+      <section class="recipe-toolbar">
+        <div class="toolbar-container">
+          <form class="toolbar-search" id="recipeSearchForm" autocomplete="off">
+            <input
+              type="text"
+              id="recipeSearch"
+              placeholder="Search recipes..."
+            />
+            <button type="submit" aria-label="Search">
+              <img src="./images/search.png" width="20px" alt="" />
+            </button>
+          </form>
+          <div class="toolbar-filters">
+            <select id="filterCategory">
+              <option value="">All Categories</option>
+              <option value="cake">Cake</option>
+              <option value="pasta">Pasta</option>
+              <option value="toast">Toast</option>
+            </select>
+            <select id="sortOrder">
+              <option value="az">A-Z</option>
+              <option value="za">Z-A</option>
+              <option value="time">By Time</option>
+            </select>
+            <button
+              type="button"
+              class="toolbar-btn"
+              id="filterBtn"
+              aria-label="Filter"
+            >
+              &#9881; Filter
+            </button>
+          </div>
+        </div>
+      </section>
       <section class="recipe-main" style="position: relative">
         <div class="recipe-nav-btns">
           <button
@@ -135,9 +170,9 @@
                   </ol>
                 </div>
                 <div class="author-box">
-                  <img src="./images/chef-avatar.png" alt="Chef" />
+                  <img src="./images/dara.jpg" alt="Chef" />
                   <div class="author-info">
-                    <strong>Chef Laura Zola</strong><br />
+                    <strong>Chef Dara</strong><br />
                     <span>Recipe Author</span>
                   </div>
                 </div>
@@ -146,10 +181,7 @@
             <!-- Recipe 2 -->
             <div class="recipe-card">
               <div class="recipe-image">
-                <img
-                  src="./images/recipes-pasta.jpg"
-                  alt="Creamy Alfredo Pasta"
-                />
+                <img src="./images/recipes-15.jpg" alt="Creamy Alfredo Pasta" />
               </div>
               <div class="recipe-content">
                 <h1 class="recipe-title">Creamy Alfredo Pasta</h1>
@@ -195,21 +227,18 @@
                   </ol>
                 </div>
                 <div class="author-box">
-                  <img src="./images/chef-avatar.png" alt="Chef" />
+                  <img src="./images/ben.jpg" alt="Chef" />
                   <div class="author-info">
-                    <strong>Chef Thomas Moriz</strong><br />
+                    <strong>Chef Benny</strong><br />
                     <span>Recipe Author</span>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Recipe 3 -->
+
             <div class="recipe-card">
               <div class="recipe-image">
-                <img
-                  src="./images/recipes-avocado-toast.jpg"
-                  alt="Avocado Toast"
-                />
+                <img src="./images/recipes-10.jpg" alt="Avocado Toast" />
               </div>
               <div class="recipe-content">
                 <h1 class="recipe-title">Avocado Toast</h1>
@@ -241,9 +270,9 @@
                   </ol>
                 </div>
                 <div class="author-box">
-                  <img src="./images/chef-avatar.png" alt="Chef" />
+                  <img src="./images/tega.jpg" alt="Chef" />
                   <div class="author-info">
-                    <strong>Chef Laura Zola</strong><br />
+                    <strong>Chef Anjola</strong><br />
                     <span>Recipe Author</span>
                   </div>
                 </div>
@@ -254,7 +283,13 @@
         </div>
       </section>
     </main>
-    <script src="./js/app.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>© 2025 FoodHub - All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="js/navbar.js"></script>
     <script>
       // Recipe slider logic
       const slider = document.getElementById("recipeSlider");
