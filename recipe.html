@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe</title>
+    <link rel="stylesheet" href="./css/recpe.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo" />
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav" id="navMenu">
+        <div class="navigation">
+          <li><a href="./index.html">Home</a></li>
+          <div class="dots active">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="navigation">
+          <li><a href="./about.html">About</a></li>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="navigation">
+          <li><a href="./recipe.html">Recipe</a></li>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="navigation">
+          <li><a href="./blog.html">Blog</a></li>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="navigation">
+          <li><a href="./contact.html">Contact</a></li>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </ul>
+      <div class="nav-btn">
+        <div class="overlay"></div>
+        <p>Add recipe</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="recipe-main" style="position: relative">
+        <div class="recipe-nav-btns">
+          <button
+            class="slider-btn"
+            id="prevRecipe"
+            aria-label="Previous recipe"
+          >
+            &#8592;
+          </button>
+          <button class="slider-btn" id="nextRecipe" aria-label="Next recipe">
+            &#8594;
+          </button>
+        </div>
+        <div class="recipe-slider-wrapper">
+          <div class="recipe-slider" id="recipeSlider">
+            <!-- Recipe 1 -->
+            <div class="recipe-card">
+              <div class="recipe-image">
+                <img src="./images/recipes-17-1.jpg" alt="Chocolate Cake" />
+              </div>
+              <div class="recipe-content">
+                <h1 class="recipe-title">Too Much Chocolate Cake</h1>
+                <div class="recipe-meta">
+                  <span>⏱ 60 min</span>
+                  <span>✔️ 5 steps</span>
+                  <span>🍽️ Serves 8</span>
+                </div>
+                <p class="recipe-description">
+                  This rich, moist chocolate cake is a chocolate lover’s dream!
+                  Perfect for birthdays, celebrations, or any time you crave
+                  something sweet and decadent.
+                </p>
+                <div>
+                  <div class="recipe-section-title">Ingredients</div>
+                  <ul class="ingredients-list">
+                    <li>1 package devil's food cake mix</li>
+                    <li>1 package instant chocolate pudding mix</li>
+                    <li>1 cup sour cream</li>
+                    <li>1 cup vegetable oil</li>
+                    <li>4 large eggs</li>
+                    <li>1/2 cup warm water</li>
+                    <li>2 cups semisweet chocolate chips</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="recipe-section-title">Instructions</div>
+                  <ol class="steps-list">
+                    <li>
+                      Preheat oven to 175°C (350°F). Grease and flour a Bundt
+                      pan.
+                    </li>
+                    <li>
+                      In a large bowl, mix together the cake and pudding mixes,
+                      sour cream, oil, eggs, and water.
+                    </li>
+                    <li>
+                      Stir in the chocolate chips and pour batter into prepared
+                      pan.
+                    </li>
+                    <li>
+                      Bake for 50–55 minutes, or until top is springy to the
+                      touch and a wooden pick comes out clean.
+                    </li>
+                    <li>
+                      Cool cake thoroughly in pan for 1 hour before inverting
+                      onto a plate. Dust with powdered sugar if desired.
+                    </li>
+                  </ol>
+                </div>
+                <div class="author-box">
+                  <img src="./images/chef-avatar.png" alt="Chef" />
+                  <div class="author-info">
+                    <strong>Chef Laura Zola</strong><br />
+                    <span>Recipe Author</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Recipe 2 -->
+            <div class="recipe-card">
+              <div class="recipe-image">
+                <img
+                  src="./images/recipes-pasta.jpg"
+                  alt="Creamy Alfredo Pasta"
+                />
+              </div>
+              <div class="recipe-content">
+                <h1 class="recipe-title">Creamy Alfredo Pasta</h1>
+                <div class="recipe-meta">
+                  <span>⏱ 30 min</span>
+                  <span>✔️ 4 steps</span>
+                  <span>🍽️ Serves 4</span>
+                </div>
+                <p class="recipe-description">
+                  A classic Italian pasta tossed in a rich, creamy Alfredo
+                  sauce. Quick, easy, and perfect for weeknight dinners.
+                </p>
+                <div>
+                  <div class="recipe-section-title">Ingredients</div>
+                  <ul class="ingredients-list">
+                    <li>400g fettuccine pasta</li>
+                    <li>1 cup heavy cream</li>
+                    <li>1/2 cup butter</li>
+                    <li>1 cup grated Parmesan cheese</li>
+                    <li>2 cloves garlic, minced</li>
+                    <li>Salt & pepper to taste</li>
+                    <li>Chopped parsley (for garnish)</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="recipe-section-title">Instructions</div>
+                  <ol class="steps-list">
+                    <li>
+                      Cook pasta according to package instructions. Drain and
+                      set aside.
+                    </li>
+                    <li>
+                      In a pan, melt butter and sauté garlic until fragrant.
+                    </li>
+                    <li>
+                      Add cream and simmer for 2 minutes. Stir in Parmesan until
+                      melted.
+                    </li>
+                    <li>
+                      Toss pasta in sauce, season, and garnish with parsley.
+                      Serve hot.
+                    </li>
+                  </ol>
+                </div>
+                <div class="author-box">
+                  <img src="./images/chef-avatar.png" alt="Chef" />
+                  <div class="author-info">
+                    <strong>Chef Thomas Moriz</strong><br />
+                    <span>Recipe Author</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Recipe 3 -->
+            <div class="recipe-card">
+              <div class="recipe-image">
+                <img
+                  src="./images/recipes-avocado-toast.jpg"
+                  alt="Avocado Toast"
+                />
+              </div>
+              <div class="recipe-content">
+                <h1 class="recipe-title">Avocado Toast</h1>
+                <div class="recipe-meta">
+                  <span>⏱ 10 min</span>
+                  <span>✔️ 3 steps</span>
+                  <span>🍽️ Serves 2</span>
+                </div>
+                <p class="recipe-description">
+                  Crunchy toast topped with smashed avocado, cherry tomatoes,
+                  and herbs. A healthy and delicious breakfast or snack.
+                </p>
+                <div>
+                  <div class="recipe-section-title">Ingredients</div>
+                  <ul class="ingredients-list">
+                    <li>2 slices whole grain bread</li>
+                    <li>1 ripe avocado</li>
+                    <li>6 cherry tomatoes, halved</li>
+                    <li>Salt & pepper to taste</li>
+                    <li>Fresh herbs (parsley or cilantro)</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="recipe-section-title">Instructions</div>
+                  <ol class="steps-list">
+                    <li>Toast the bread slices to your liking.</li>
+                    <li>Mash avocado, season, and spread on toast.</li>
+                    <li>Top with tomatoes and herbs. Serve immediately.</li>
+                  </ol>
+                </div>
+                <div class="author-box">
+                  <img src="./images/chef-avatar.png" alt="Chef" />
+                  <div class="author-info">
+                    <strong>Chef Laura Zola</strong><br />
+                    <span>Recipe Author</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add more recipes as needed -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/app.js"></script>
+    <script>
+      // Recipe slider logic
+      const slider = document.getElementById("recipeSlider");
+      const prevBtn = document.getElementById("prevRecipe");
+      const nextBtn = document.getElementById("nextRecipe");
+      const cards = slider.querySelectorAll(".recipe-card");
+      let current = 0;
+
+      function updateSlider() {
+        slider.style.transform = `translateX(-${current * 100}%)`;
+        prevBtn.disabled = current === 0;
+        nextBtn.disabled = current === cards.length - 1;
+      }
+
+      prevBtn.addEventListener("click", () => {
+        if (current > 0) {
+          current--;
+          updateSlider();
+        }
+      });
+
+      nextBtn.addEventListener("click", () => {
+        if (current < cards.length - 1) {
+          current++;
+          updateSlider();
+        }
+      });
+
+      // Initialize
+      updateSlider();
+    </script>
+  </body>
+</html>

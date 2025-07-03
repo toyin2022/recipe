@@ -11,64 +11,346 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Recipe</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Recipes</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
     <section class="hero">
-      <h2>Discover Delicious Recipes</h2>
-      <p>
-        Find inspiration for your next meal! Explore easy, healthy, and tasty
-        recipes for every occasion.
-      </p>
-      <form class="search-bar" onsubmit="return false;">
-        <input type="text" placeholder="Search recipes..." />
-        <button type="submit">Search</button>
-      </form>
+      <header class="header">
+        <div class="logo">
+          <img src="./images/logo.png" alt="logo" />
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav" id="navMenu">
+          <div class="navigation">
+            <li><a href="./index.html">Home</a></li>
+            <div class="dots active">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+          <div class="navigation">
+            <li><a href="./about.html">About</a></li>
+            <div class="dots">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+          <div class="navigation">
+            <li><a href="./recipe.html">Recipe</a></li>
+            <div class="dots">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+          <div class="navigation">
+            <li><a href="./blog.html">Blog</a></li>
+            <div class="dots">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+          <div class="navigation">
+            <li><a href="./contact.html">Contact</a></li>
+            <div class="dots">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+        </ul>
+        <div class="nav-btn">
+          <div class="overlay"></div>
+          <p>Add recipe</p>
+        </div>
+      </header>
+
+      <div class="hero-content">
+        <h1>
+          It is even better than <br />
+          an expensive cookery book
+        </h1>
+        <p>Learn how to make your favorite restaurant’s dishes</p>
+
+        <form class="search-box">
+          <input type="text" placeholder="I want to make..." />
+          <select>
+            <option>Categories</option>
+            <option>Appetizers</option>
+            <option>Main Dishes</option>
+            <option>Desserts</option>
+          </select>
+        </form>
+      </div>
     </section>
-    <section class="recipes">
-      <div class="recipe-card">
-        <img
-          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
-          alt="Grilled Chicken"
-        />
-        <div class="recipe-card-content">
-          <h3>Grilled Chicken Salad</h3>
+
+    <!-- category -->
+    <section class="category-section">
+      <div class="container">
+        <h2 class="section-title">Recipes By Category</h2>
+        <p class="section-description">
+          Excepteur sint occaecat cupidatat non qui proident, sunt culpa qui
+          officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="card-grid">
+          <div
+            class="card sweet"
+            style="
+              background-image: url('./images/sweets_categ.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="card-img"></div>
+            <h3>Sweets</h3>
+          </div>
+          <div
+            class="card burger"
+            style="
+              background-image: url('./images/burger_categ.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="card-img"></div>
+            <h3>Burgers</h3>
+          </div>
+          <div
+            class="card drink"
+            style="
+              background-image: url('./images/drinks_categ.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="card-img"></div>
+            <h3>Drinks</h3>
+          </div>
+          <div
+            class="card pizza"
+            style="
+              background-image: url('./images/pizza_categ.jpg');
+              background-size: cover;
+            "
+          >
+            <div class="card-img"></div>
+            <h3>Pizzas</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsltter -->
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+        <div class="newsletter-text">
+          <h2>Subscribe to our <span>Newsletter</span></h2>
           <p>
-            Fresh greens topped with juicy grilled chicken and a zesty
-            vinaigrette.
+            Fusce id velit placerat, efficitur libero placerat, sodales ante.<br />
+            Curabitur sed erosat orci congue vestibulum.
+          </p>
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog-section">
+      <div class="blog-container">
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+          <h3 class="blog-sidebar-title">Categories</h3>
+          <ul class="blog-categories">
+            <li>
+              <img src="./images/post-category01.png" alt="" /> Kitchen
+              <span>5</span>
+            </li>
+            <li>
+              <img src="./images/post-categories2.png" alt="" /> Restaurants
+              <span>3</span>
+            </li>
+            <li>
+              <img src="./images/post-categories3.png" alt="" /> Events
+              <span>3</span>
+            </li>
+            <li>
+              <img src="./images/post-categories4.png" alt="" />Lifestyle
+              <span>3</span>
+            </li>
+            <li>
+              <img src="./images/cuisine-category.png" alt="" /> Cuisine
+              <span>2</span>
+            </li>
+            <li>
+              <img src="./images/soup-category.png" alt="" />Soups
+              <span>1</span>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Blog Content -->
+        <div class="blog-main">
+          <h2 class="blog-heading">Latest Blog Posts</h2>
+
+          <div class="blog-posts">
+            <div class="blog-item">
+              <img src="./images/blog-pic01.jpg" alt="Allergens" />
+              <div class="blog-content">
+                <p class="blog-meta">Allergens, Dinner</p>
+                <h3 class="blog-title">Allergens to Watch Out For</h3>
+                <p class="blog-text">
+                  Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
+                  phaedrum complectitur.
+                </p>
+              </div>
+            </div>
+
+            <div class="blog-item">
+              <img src="./images/blogpost03.jpg" alt="Vegan Roast" />
+              <div class="blog-content">
+                <p class="blog-meta">Cook, Dinner</p>
+                <h3 class="blog-title">15 Vegan Roast Alternatives</h3>
+                <p class="blog-text">
+                  Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
+                  phaedrum complectitur.
+                </p>
+              </div>
+            </div>
+
+            <div class="blog-item">
+              <img src="./images/blogpost04.jpg" alt="Tools" />
+              <div class="blog-content">
+                <p class="blog-meta">Kitchen, Tools</p>
+                <h3 class="blog-title">Why Your Tools Matter</h3>
+                <p class="blog-text">
+                  Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
+                  phaedrum complectitur.
+                </p>
+              </div>
+            </div>
+
+            <div class="blog-item">
+              <img src="./images/recipes-19.jpg" alt="Cafe Relax" />
+              <div class="blog-content">
+                <p class="blog-meta">Restaurant, Vegan</p>
+                <h3 class="blog-title">Cafe Restaurant Relax</h3>
+                <p class="blog-text">
+                  Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
+                  phaedrum complectitur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cupcake -->
+    <section class="recipe-list-section">
+      <div class="recipe-container">
+        <!-- Title -->
+        <div class="recipe-header">
+          <h2 class="recipe-title">Cakes & Cupcakes</h2>
+          <p class="recipe-subtitle">
+            Excepteur sint occaecat cupidatat non qui proident, sunt culpa qui
+            officia deserunt mollit anim id est laborum.
           </p>
         </div>
-      </div>
-      <div class="recipe-card">
-        <img
-          src="https://images.unsplash.com/photo-1512058564366-c9e1edbdfb49?auto=format&fit=crop&w=400&q=80"
-          alt="Pasta"
-        />
-        <div class="recipe-card-content">
-          <h3>Creamy Alfredo Pasta</h3>
-          <p>Classic Italian pasta tossed in a rich, creamy Alfredo sauce.</p>
-        </div>
-      </div>
-      <div class="recipe-card">
-        <img
-          src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80"
-          alt="Avocado Toast"
-        />
-        <div class="recipe-card-content">
-          <h3>Avocado Toast</h3>
-          <p>
-            Crunchy toast topped with smashed avocado, cherry tomatoes, and
-            herbs.
-          </p>
+
+        <div class="recipe-grid-wrapper">
+          <!-- Recipe Grid -->
+          <div class="recipe-grid">
+            <!-- Column 1 -->
+            <div class="recipe-column">
+              <div class="recipe-entry">
+                <img src="./images/recipe_lobster_author-1.jpg" alt="Beef" />
+                <div>
+                  <h4>Beef Massaman Soup Marroc</h4>
+                  <p>⏱ 60 min ✔️ 4 steps</p>
+                </div>
+              </div>
+
+              <div class="recipe-entry highlight">
+                <img src="./images/recipe_massaman_soup-1.jpg" alt="Cabbage" />
+                <div>
+                  <h4>Southern Fried Cabbage with</h4>
+                  <p>⏱ 60 min ✔️ 5 steps</p>
+                </div>
+              </div>
+
+              <div class="recipe-entry">
+                <img src="./images/recipes-05.jpg" alt="Cheesecake" />
+                <div>
+                  <h4>New York Cheesecake Pot</h4>
+                  <p>⏱ 60 min ✔️ 4 steps</p>
+                </div>
+              </div>
+
+              <div class="recipe-entry">
+                <img src="./images/recipes-10.jpg" alt="Apple Pie" />
+                <div>
+                  <h4>Apple Pie Cider Green</h4>
+                  <p>⏱ 60 min ✔️ 4 steps</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="recipe-column">
+              <div class="recipe-entry">
+                <img src="./images/recipes-15.jpg" alt="Tiramisu" />
+                <div>
+                  <h4>Italian Tiramisu Vero Perro</h4>
+                  <p>⏱ 30 min ✔️ 5 steps</p>
+                </div>
+              </div>
+
+              <div class="recipe-entry">
+                <img src="./images/recipes-17-1.jpg" alt="Chocolate Cake" />
+                <div>
+                  <h4>Too Much Chocolate Cake</h4>
+                  <p>⏱ 60 min ✔️ 3 steps</p>
+                </div>
+              </div>
+
+              <div class="recipe-entry">
+                <img src="./images/recipes-18-1.jpg" alt="Cookies" />
+                <div>
+                  <h4>Best Chocolate Chip Cookies</h4>
+                  <p>⏱ 60 min ✔️ 4 steps</p>
+                </div>
+              </div>
+
+              <div class="recipe-entry">
+                <img src="./images/recipes-19.jpg" alt="Strawberry" />
+                <div>
+                  <h4>B and Honey Strawberry</h4>
+                  <p>⏱ 30 min ✔️ 4 steps</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Sidebar -->
+          <aside class="social-follow-box">
+            <h4>Follow the Kitchen</h4>
+            <a class="social-btn instagram" href="#">📷 Follow on Instagram</a>
+            <a class="social-btn facebook" href="#">📘 Like on Facebook</a>
+            <a class="social-btn youtube" href="#">▶️ Subscribe on YouTube</a>
+            <a class="social-btn twitter" href="#">🐦 Follow on Twitter</a>
+          </aside>
         </div>
       </div>
     </section>
-    <footer>&copy; 2025 Recipe. All rights reserved.</footer>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>© 2025 FoodHub - All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

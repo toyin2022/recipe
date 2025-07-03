@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="./css/blog.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo" />
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav" id="navMenu">
+        <div class="navigation">
+          <li><a href="./index.html">Home</a></li>
+          <div class="dots active">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="navigation">
+          <li><a href="./about.html">About</a></li>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="navigation">
+          <li><a href="./recipe.html">Recipe</a></li>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="navigation">
+          <li><a href="./blog.html">Blog</a></li>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="navigation">
+          <li><a href="./contact.html">Contact</a></li>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </ul>
+      <div class="nav-btn">
+        <div class="overlay"></div>
+        <p>Add recipe</p>
+      </div>
+    </header>
+
+    <section class="blog-section">
+      <div class="blog-container">
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+          <h3 class="blog-sidebar-title">Categories</h3>
+          <ul class="blog-categories">
+            <li>
+              <img src="./images/post-category01.png" alt="" /> Kitchen
+              <span>5</span>
+            </li>
+            <li>
+              <img src="./images/post-categories2.png" alt="" /> Restaurants
+              <span>3</span>
+            </li>
+            <li>
+              <img src="./images/post-categories3.png" alt="" /> Events
+              <span>3</span>
+            </li>
+            <li>
+              <img src="./images/post-categories4.png" alt="" /> Lifestyle
+              <span>3</span>
+            </li>
+            <li>
+              <img src="./images/cuisine-category.png" alt="" /> Cuisine
+              <span>2</span>
+            </li>
+            <li>
+              <img src="./images/soup-category.png" alt="" /> Soups
+              <span>1</span>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Blog Content -->
+        <div class="blog-main">
+          <h2 class="blog-heading">Latest Blog Posts</h2>
+          <div class="blog-posts">
+            <div class="blog-item">
+              <img src="./images/blog-pic01.jpg" alt="Allergens" />
+              <div class="blog-content">
+                <p class="blog-meta">Allergens, Dinner</p>
+                <h3 class="blog-title">Allergens to Watch Out For</h3>
+                <p class="blog-text">
+                  Learn about common food allergens and how to avoid them in
+                  your kitchen for a safer dining experience.
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <img src="./images/blogpost03.jpg" alt="Vegan Roast" />
+              <div class="blog-content">
+                <p class="blog-meta">Cook, Dinner</p>
+                <h3 class="blog-title">15 Vegan Roast Alternatives</h3>
+                <p class="blog-text">
+                  Discover delicious vegan roast options that will impress even
+                  the most dedicated meat lovers.
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <img src="./images/blogpost04.jpg" alt="Tools" />
+              <div class="blog-content">
+                <p class="blog-meta">Kitchen, Tools</p>
+                <h3 class="blog-title">Why Your Tools Matter</h3>
+                <p class="blog-text">
+                  The right kitchen tools can make or break your cooking. Find
+                  out which essentials every chef should own.
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <img src="./images/recipes-19.jpg" alt="Cafe Relax" />
+              <div class="blog-content">
+                <p class="blog-meta">Restaurant, Vegan</p>
+                <h3 class="blog-title">Cafe Restaurant Relax</h3>
+                <p class="blog-text">
+                  A review of the best vegan-friendly cafes in town and what
+                  makes them stand out.
+                </p>
+              </div>
+            </div>
+            <!-- Add more blog items as needed -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/app.js"></script>
+    <script>
+      // Highlight active nav dot for Blog
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".nav .navigation li a");
+        const navDots = document.querySelectorAll(".nav .navigation .dots");
+        const current =
+          window.location.pathname.split("/").pop() || "index.html";
+        navLinks.forEach((link, i) => {
+          if (link.getAttribute("href") === current) {
+            navDots[i].classList.add("active");
+          } else {
+            navDots[i].classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

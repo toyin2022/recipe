@@ -1,5 +1,17 @@
 Recipe 🍴
 
+Team Members
+Oni Sheriffdeen Oluwatoyin (Group Leader)
+Amosu Abdullah Oluwasegun
+Okunyomih Ohghenetega Anjola
+Omohkodion Benjamin Erenosa
+Davies Richard Oluwatunmise
+Otubu Abdullateef Eniafe
+Olamide Eniola
+Adejare Beatrice
+Danmola Zainab
+Princess
+
 🌟 Project Vision
 Welcome to Recipe, a delightful digital kitchen where culinary inspiration meets simplicity! Our goal is to create a sleek, user-friendly recipe and food blog website using HTML, CSS, and JavaScript. Designed for home cooks, food enthusiasts, and flavor explorers, Recipe serves up a curated collection of mouthwatering dishes and engaging food stories. From quick meals to indulgent treats, our platform makes every recipe an adventure.
 In just 2 weeks, our passionate team is building a responsive, visually appealing website that’s as easy to navigate as a well-organized cookbook. With clean design and intuitive features, Recipe is your go-to source for culinary creativity.
